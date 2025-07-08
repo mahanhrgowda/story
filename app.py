@@ -11,10 +11,10 @@ st.title("Phoneme to Chakra Story Generator")
 st.markdown("Enter an English name to discover its phonemes, associated chakras, and a mystical story set in ancient India.")
 
 # Input for name
-name = st.text_input("Enter a name:", placeholder="e.g., Arjun")
+name = st.text_input("Enter a name:", placeholder="e.g., Mahaan")
 
 # Input for xAI API key (use Streamlit secrets for deployment)
-api_key = st.text_input("Enter your xAI API key:", type="password")
+api_key = st.secrets.get("XAI_API_KEY", "")
 if not api_key:
     st.warning("Please enter an xAI API key. For deployment, store it in Streamlit secrets.")
 
