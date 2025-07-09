@@ -119,4 +119,3 @@ if st.button("Generate Story") and name:
             st.markdown(story)
         else:
             st.error("Could not extract phonemes. Please try another name.")
-```
